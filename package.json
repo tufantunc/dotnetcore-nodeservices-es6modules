@@ -1,0 +1,8 @@
+{
+  "name": "dotnetcore-nodeservices-es6modules",
+  "version": "1.0.0",
+  "description": "> Sample of creating UI elements from JavaScript ES6 modules to use in .netCore MVC with NodeServices",
+  "scripts": {
+    "postinstall": "cd RunJSInDotNetCoreMvc && npm install"
+  }
+}
