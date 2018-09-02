@@ -6,5 +6,5 @@ test: 'off'
 deploy: 'off'
 before_build:
 - cmd: set ASPNETCORE_ENVIRONMENT=Production
-- cmd: dotnet restore c:\projects\dotnetcore-nodeservices-es6modules\RunJSInDotNetCoreMvc\
+- cmd: dotnet restore c:\projects\dotnetcore-nodeservices-es6modules\
 image: Visual Studio 2017
