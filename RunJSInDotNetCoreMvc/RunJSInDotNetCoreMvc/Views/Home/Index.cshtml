@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts {
+    <script src="~/dist/site.min.js"></script>
+}
+
+<div class="weather-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Weather</h1>
+    <p class="lead">First card(Istanbul) rendered on backend, others rendered from front-end with <strong><i><u>same template script.</u></i></strong></p>
+    <p><small>To simulate, it's delayed with 3 second timeout.</small></p>
+</div>
+
+<div class="container">
+    <div class="card-deck mb-3 text-center" id="weathercards">
+        @Html.Raw(ViewData["ResultFromNode"])
+    </div>
+</div>

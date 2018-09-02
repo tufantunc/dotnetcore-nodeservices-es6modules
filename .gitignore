@@ -92,6 +92,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+**/wwwroot/dist/
 
 # Visual Studio 2015
 .vs/
