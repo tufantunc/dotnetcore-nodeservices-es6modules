@@ -1,4 +1,4 @@
-# dotnetcore-nodeservices-es6modules
+# dotnetcore-nodeservices-es6modules [![Build status](https://ci.appveyor.com/api/projects/status/tdyb3avy4epwnsag?svg=true)](https://ci.appveyor.com/project/tufantunc/dotnetcore-nodeservices-es6modules)
 > Sample of creating UI elements from JavaScript ES6 modules to use in .netCore MVC with NodeServices
 
 ## About NodeServices
