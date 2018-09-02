@@ -1,0 +1,9 @@
+FROM microsoft/dotnet:2.1-sdk AS builder
+WORKDIR /RunJSInDotNetCoreMvc
+COPY . .
+RUN dotnet publish -c Release
+
+FROM microsoft/dotnet:2.1-aspnetcore-runtime
+WORKDIR /RunJSInDotNetCoreMvc
+COPY --from=builder /RunJSInDotNetCoreMvc/RunJSInDotNetCoreMvc/bin/Release/netcoreapp2.1/ .
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet RunJSInDotNetCoreMvc.dll
