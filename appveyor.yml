@@ -6,4 +6,5 @@ test: 'off'
 deploy: 'off'
 before_build:
 - cmd: set ASPNETCORE_ENVIRONMENT=Production
+- cmd: dotnet restore
 image: Visual Studio 2017
